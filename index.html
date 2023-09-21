@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raymondo</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+
+  <!--
+<div class="alert" >
+<div class="alert-box">
+<p>Hi,I would love to know your name?</p>
+<input type="text" placeholder="Name?"><br>
+<button>Cancel</button><Button>Done</Button>
+</div>
+</div>
+-->
+
+  <div class="container">
+    <center>
+      <div class="nav">
+        <nav>
+          <img src="images/logo.png" width="150px"><br>
+          <ul>
+            <a href="" style="color: #2f50b4;box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),  -10px -10px 10px -1px rgba(255, 255, 255, 0.70);
+            ">
+              <li>Home</li>
+            </a>
+
+            <a href="./more-projekt.html"
+              onclick="document.getElementById('projectH1').style.animation='TitleIndicator 1s 3';document.getElementById('projectHr').style.animation='TitleIndicator 1s 5'">
+              <li>Projects</li>
+            </a>
+
+            <a href="#events"
+              onclick="document.getElementById('eventH1').style.animation='TitleIndicator 1s 3';document.getElementById('eventHr').style.animation='TitleIndicator 1s 5'">
+              <li>Events</li>
+            </a>
+
+            <a href="#contact"
+              onclick="document.getElementById('contactH1').style.animation='TitleIndicator 1s 3';document.getElementById('contactHr').style.animation='TitleIndicator 1s 5'">
+              <li>Contact</li>
+            </a>
+          </ul>
+
+        </nav>
+      </div>
+    </center>
+
+    <center>
+      <div class="home">
+        <div class="box">
+          <h1>Full-stack <i>web</i> and <i>mobile <br> app</i> developer,and <br> an <i>ethical hacker</i>.</h1><br>
+          <p>I am a skilled programmer and ethical hacker with passion for technology and cybersecurity.<span
+              id="ellipsis" hidden>...</span></p>
+          <p id="content"><br> With a keen eye for identifying vulnerabilities and a talent for crafting secure
+            solutions. <br> I strive to protect digital assets while pushing the boundaries of innovation in programming
+            world.<br> My commitment to ethical practices and continuous learning makes me a valuable assets in the <br>
+            ever-evolving landscape of cybersecurity.</p><br>
+          <div class="btn" hidden>
+            <button id="btnsee"
+              onclick="document.getElementById('content').style.display='block'; document.getElementById('btnHide').style.display='block'; document.getElementById('btnsee').style.display='none';document.getElementById('ellipsis').style.display='none'">See
+              more</button>
+
+            <button id="btnHide"
+              onclick="document.getElementById('content').style.display='none'; document.getElementById('btnsee').style.display='block'; document.getElementById('btnHide').style.display='none';document.getElementById('ellipsis').style.display='block'"
+              hidden>See Less</button>
+          </div>
+
+        </div>
+
+        <div class="box2">
+          <div class="imageframe"></div>
+        </div>
+      </div>
+    </center>
+
+    <div class="projects" id="projects">
+      <div class="sub-nav">
+        <h1 id="projectH1"><i class="bx bx-book"></i> My Projects</h1>
+        <div class="arrows">
+          <a href="#">
+            <div class="btn"><i class="bx bx-up-arrow-alt"></i></div>
+          </a>
+          <a href="#events">
+            <div class="btn"><i class="bx bx-down-arrow-alt"></i></div>
+          </a>
+        </div>
+      </div>
+      <hr id="projectHr">
+      <center>
+        <div class="project-con">
+          <div class="project-box">
+            <img src="./images/Screenshot 2023-09-11 at 23-03-50 SilverClouds.png" height="150px" width="200px"><br>
+            <b>Social Network</b>
+            <p>A platform capable of connecting millions of people together to...</p>
+          </div>
+
+          <div class="project-box">
+            <img src="./images/Screenshot 2023-07-10 at 08-56-29 Cool Piks.png" height="150px" width="200px"><br>
+            <b>Online Store</b>
+            <p>An online store where people can purchase items...</p>
+          </div>
+
+          <div class="project-box">
+            <img src="./images/Ai regulator.png" height="150px" width="200px"><br>
+            <b>AI Regulator</b>
+            <p>This AI Regulator informs Students automatically and per... </p>
+          </div>
+
+          <div class="project-box">
+            <img src="./images/calculator.png" height="150px" width="200px"><br>
+            <b>Calculator App</b>
+            <p>Calculator app programmed to handle educational and...</p>
+          </div>
+        </div><br>
+        <a href="./more-projekt.html">
+          <button class="seemore">See More</button>
+        </a>
+    </div>
+    </center>
+
+
+    <div class="events" id="events">
+      <div class="sub-nav">
+        <h1 id="eventH1"><i class="bx bx -calender-event"></i> Upcoming Events</h1>
+        <div class="arrows">
+          <a href="#projects">
+            <div class="btn"><i class="bx bx-up-arrow-alt"></i></div>
+          </a>
+          <a href="#contact">
+            <div class="btn"><i class="bx bx-down-arrow-alt"></i></div>
+          </a>
+        </div>
+      </div>
+      <hr id="eventHr"><br>
+      <h3><i class="bx bx-cake"></i> My Birthday</h3>
+      <center>
+        <div class="event-con">
+          <div class="event-box">
+            <p>Days</p><br>
+            <span id="Bday">00</span>
+          </div>
+          <div class="event-box">
+            <p>Hours</p><br>
+            <span id="Bhour">00</span>
+          </div>
+          <div class="event-box">
+            <p>Minutes</p><br>
+            <span id="Bminute">00</span>
+          </div>
+
+          <div class="event-box">
+            <p>Seconds</p><br>
+            <span id="Bseconds">00</span>
+          </div>
+        </div>
+        <a href="birthday.html"><button>Celebrate</button></a>
+      </center>
+      <br>
+
+      <h3><i class="bx bx-car"></i> Buying my dream car</h3>
+      <center>
+        <div class="event-con">
+          <div class="event-box">
+            <p>Days</p><br>
+            <span>43</span>
+          </div>
+          <div class="event-box">
+            <p>Hours</p><br>
+            <span>04</span>
+          </div>
+          <div class="event-box">
+            <p>Minutes</p><br>
+            <span>00</span>
+          </div>
+
+          <div class="event-box">
+            <p>Seconds</p><br>
+            <span>00</span>
+          </div>
+
+        </div>
+        <button>View Dream Car</button>
+
+
+      </center>
+      <p>More events will appear here.</p><br><br>
+    </div>
+    <div class="contact" id="contact">
+
+      <div class="sub-nav">
+        <h1 id="contactH1"><i class="bx bx-user"></i> Contact Me</h1>
+        <div class="arrows">
+          <a href="#events" style="width: 25px;" class="btn"><i class="bx bx-up-arrow-alt"></i>
+        </div></a>
+      </div>
+    </div>
+    <hr id="contactHr">
+
+    <div class="contact-con">
+
+      <form action="">
+        <h2><i class="bx bx-message"></i> Leave a Message</h2><br>
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name"><br><br>
+        <textarea placeholder="Write Your Message here... "></textarea><br><br>
+        <button><i class="bx bx-send" style="transform: rotate(-20deg);"></i> Send Message </button>
+
+      </form>
+
+
+      <div class="phone-email">
+        <h2><i class="bx bx-star"></i> Quick Connect</h2><br>
+        <p><i class="bx bx-phone" style="color: rgb(42, 206, 6);"></i> Phone Number</p>
+        <div class="box">
+          <a href="tel:+2348142975443">
+            +234-81-4297-5443</a>
+          <i class="bx bx-copy"></i>
+        </div><br><br>
+
+        <p><i class="bx bxl-gmail" style="color: rgb(206, 86, 6);"></i> Email Address</p>
+        <div class="box">
+          <a href="mailto:raymonddabere200@gmail.com">
+            raymonddabere200@gmail.com</a>
+          <i class="bx bx-copy"></i>
+        </div><br>
+
+        <p><i class="bx bx-group" style="color: rgb(206, 133, 6);"></i> Social</p>
+        <div class="box" style="overflow-x: scroll;">
+          <div class="social">
+            <div class="link"><i class="bx bxl-facebook" style="color: rgb(86, 86, 254);"></i></div>
+            <div class="link"><i class="bx bxl-instagram" style="color: orangered;"></i></div>
+            <div class="link"><i class="bx bxl-whatsapp" style="color: green;"></i></div>
+            <div class="link"><i class="bx bxl-tiktok" style="color: rgb(0, 0, 0);"></i></div>
+            <div class="link"><i class="bx bxl-twitter" style="color: blue;"></i></div>
+            <div class="link"><i class="bx bxl-youtube" style="color: crimson;"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-con">
+        <h2> <i class="bx bx-map"></i> Location</h2><br>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d483.37205193771365!2d7.085846718838935!3d4.8237736594353695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cd2c15250951%3A0xf8f4a6ddb06034f!2sAkpajo%20state%20primary%20school!5e1!3m2!1sen!2sng!4v1692500283942!5m2!1sen!2sng"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="fnq">
+      <div class="sub-nav">
+        <h1><i class="bx bx -calender-event"></i> Frequently asked questions</h1>
+      </div>
+      <hr><br>
+      <center>
+        <ul>
+          <li class="question"
+            onclick="document.getElementById('ans').style.height='fit-content';document.getElementById('ans').style.opacity='1'">
+            What is your full name? <span><i class="bx bx-chevron-down"></i></span></li>
+          <div class="answer" id="ans">Lorem ipsum, dolor sit amet onsectetur adipisicing elit. Quaerat quidem
+            architecto quod expedita consectetur, harum itaque id quibusdam veritatis maxime eos atque soluta?
+            Perspiciatis in voluptas, aliquam itaque molestias temporibus perferendis animi voluptates, repellat qui
+            dolorem labore alias illum recusandae officia facere delectus cumque nisi sunt accusamus, officiis assumenda
+            distinctio et ducimus. Dignissimos culpa quisquam cum vitae maiores aspernatur rem!</div>
+        </ul>
+        <!--
+       <li>Where are you from?</li>
+        <li>How old would you be this year?</li>
+        <li>What is your favorite song? </li>
+        <li>Who is your best friend?</li>
+        <li></li>
+        <li></li>
+      -->
+      </center>
+    </div>
+
+
+  </div>
+  <br><br>
+</body>
+<script src="script.js"></script>
+
+</html>

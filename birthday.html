@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Birthday</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <style>
+
+        .div,.div2,.div3,.div4,.div5,.div6{
+            padding: 10px;
+            position: absolute;
+            border-radius: 100px;
+            opacity: 0;
+            box-shadow: 1px 6px 10px 2px rgb(255, 0, 0) ;
+            
+        }
+        .div2{
+        margin-top: 5px;
+        background-color: rgb(98, 26, 57);
+        margin-left: 80%;
+        animation: a1 .5s  3s infinite;
+        }
+
+        .div3{
+        margin-top: 50px;
+        background-color: rgb(255, 195, 84);
+        margin-left: 80%;
+        margin-top: 90vh;
+        animation: a2  .5s 5s infinite;
+        }
+
+        .div4{
+        margin-top: 50px;
+        background-color: rgb(0, 128, 122);
+        margin-left: 10%;
+        animation: a3  .5s 6s infinite;
+        }
+
+        .div5{
+        margin-top: 50vh;
+        background-color: rgb(233, 175, 231);
+        margin-left: 50%;
+        animation: a4  .5s 7s infinite;
+        }
+
+
+        .div6{
+
+        margin-left: 98.6%;
+        }
+
+
+
+        @keyframes a1{
+            10%{
+                transform: translateY(340px);
+                color: red;
+                opacity: 0.3;
+            }
+            30%{
+                transform: translateX(-900px);
+            }
+            40%{
+                transform: translateY(500px);
+            }
+            100%{   
+                transform: translateY(30px);
+                opacity: 0.3;
+            }
+        }
+
+
+
+        @keyframes a2{
+            10%{
+                transform: translateY(-40px);
+                opacity: 0.3;
+
+            }
+            30%{
+                transform: translateX(-900px);
+            }
+            40%{
+                transform: translateY(-300px);
+            }
+            100%{
+                transform: translatex(-800px);
+                opacity: 0.3;
+            }
+        }
+
+
+
+        @keyframes a3{
+            10%{
+                transform: translateY(340px);
+                opacity: 0.3;
+            }
+            30%{
+                transform: translateX(200px);
+            }
+            40%{
+                transform: translateY(500px);
+                opacity: 0.3;
+            }
+        }
+
+
+
+        @keyframes a4{
+            10%{
+                transform: translateY(340px);
+                opacity: 0.3;
+            }
+            30%{
+                transform: translateX(-100px);
+            }
+            40%{
+                transform: translateY(100px);
+            }
+            100%{
+                transform: translateX(90px);
+                opacity: 0.3;
+            }
+        }
+
+          .container, .donation-con{
+            background-color: rgb(33, 32, 37);
+            color: white;
+        }
+
+        .birthday-div{
+            max-width: 900px;
+            padding: 0px 20px;
+        }
+        center{
+            padding:0;
+        }
+
+        .text{
+            text-align: left;
+        }
+
+        .donation-con{
+            text-align: left;
+        }
+
+        .donation-con button{
+           padding: 10px 20px;
+           font-weight: bold;
+           margin-top: 20px;
+           margin-bottom: 25px;
+           margin-left: 20px;
+           background-color:rgba(112, 159, 252, 0.523);
+           cursor:pointer;
+           border: 2px solid black;
+        }
+
+        .donation-con{
+            overflow-x: scroll;
+        }
+        .donation-con table,td,th{
+            width: 100%;
+            padding: 10px ;
+        }
+    </style>
+</head>
+<body>
+    <audio src="./AUD-20230804-WA0014.mp3" autoplay loop controls hidden></audio>
+    <div class="div"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+    <div class="div5"></div>
+    <div class="div6"></div>
+  
+    <div class="container">
+        <center>
+        <div class="birthday-div">
+            <img src="images/Untitled2.png" height="
+            100px" width="100px">
+
+            <!--timer-->
+            <div class="event-con" style="display: flex;width: 100%;justify-content: space-evenly;Color:blaCk;">
+                <div class="event-box">
+                  <p>Days</p><br>
+                  <span id="Bday">00</span>
+                </div>
+                <div class="event-box">
+                  <p>Hours</p><br>
+                  <span id="Bhour">00</span>
+                </div>
+                <div class="event-box">
+                  <p>Minutes</p><br>
+                  <span id="Bminute">00</span>
+                </div>
+        
+                <div class="event-box">
+                  <p>Seconds</p><br>
+                  <span id="Bseconds">00</span>
+                </div>
+              </div><br>
+
+              <!--Short text-->
+            <div class="text">
+                <h2>Celebrate With Me!</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est a ipsum doloremque? Harum qui voluptates repellendus dicta architecto odio cum deleniti nostrum nam non repellat mollitia iusto ullam, voluptatem molestias et itaque magnam doloremque est aperiam vel labore exercitationem. Quod quos officia vitae ut tempora, doloribus consequatur ea repellat doloremque quia omnis suscipit, quas optio nam nobis adipisci magni quam atque dolorum esse obcaecati! Tempora dicta molestiae fugit itaque. Ipsam, ratione aut unde quasi suscipit reprehenderit expedita vel temporibus sint eius, ipsa modi distinctio. Ex nam dignissimos</p>
+            </div>
+
+            <div class="donation-con">
+                <button>Donate</button>
+
+                <div class="donators">
+                    <h2>Donators</h2>
+                    <i class="bx bx-square" style="float: right;"> = converted to Naira</i><br>
+                    <table border="1">
+                        <tr>
+                            <th>Names</th>
+                            <th>Country</th>
+                            <th>Amount(Naira)</th>
+                        </tr>
+
+                        <tr>
+                            <td>Ikenna Okoro</td>
+                            <td>Nigeria</td>
+                            <td>20,000</td>
+                        </tr>
+
+                        <tr>
+                            <td>Rebecca Anne</td>
+                            <td>Australia</td>
+                            <td>15,000 <i class="bx bx-square" style="float: right;"></i></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>Yen Yen</td>
+                            <td>China</td>
+                            <td>15,000 <i class="bx bx-square" style="float: right;"></i></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>Sherizoda annoynmous</td>
+                            <td>Uzbekistan</td>
+                            <td>3,000 <i class="bx bx-square" style="float: right;"></i></td>
+                        </tr>
+
+                    </table>
+                    <p>8 people choosed to remain annoynmous.</p>
+                </div>
+            </div>
+        
+        </div>
+        </center>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
